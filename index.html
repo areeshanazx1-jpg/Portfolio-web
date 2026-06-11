@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Areesha Naz | Frontend Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">AN<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="mob-link">Home</a>
+  <a href="#about" class="mob-link">About</a>
+  <a href="#skills" class="mob-link">Skills</a>
+  <a href="#projects" class="mob-link">Projects</a>
+  <a href="#journey" class="mob-link">Journey</a>
+  <a href="#services" class="mob-link">Services</a>
+  <a href="#contact" class="mob-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>
+          <span class="line">Creative</span>
+          <span class="line gradient" id="typewriter-target"></span>
+          <span class="line">Developer</span>
+        </h1>
+        <p class="hero-sub">Hi, I'm <strong>Areesha Naz</strong> � building fast, beautiful, and user-centered web experiences using modern frontend technologies.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary"><i class="fas fa-code-branch"></i> View My Work</a>
+          <a href="#contact" class="btn btn-ghost"><i class="fas fa-envelope"></i> Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-ring">
+          <div class="avatar-img-wrap">
+            <img src="profile pic.jpg" alt="Areesha Naz" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#3b0a6e,#1a0a2e)';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;font-family:Syne,sans-serif;font-size:4rem;font-weight:800;background:linear-gradient(135deg,#c77dff,#e879f9);-webkit-background-clip:text;background-clip:text;color:transparent\'>AN</div>';">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Passionate about the web</h2>
+        <div class="about-text-block">
+          <p>I'm Areesha Naz � a dedicated frontend developer who started this journey in 2025 out of pure curiosity and quickly turned it into a deep passion for crafting digital experiences.</p>
+          <p>I specialize in building responsive, visually rich, and accessible web applications. From clean HTML/CSS layouts to dynamic JavaScript interactions � I love every part of the process.</p>
+          <p>Currently exploring full-stack territory with PHP and Laravel while sharpening my UI/UX sensibility through real-world projects.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="about-stats">
+          <div class="stat-box"><span class="stat-num" data-count="3">0</span><span class="stat-label">Projects Built</span></div>
+          <div class="stat-box"><span class="stat-num" data-count="7">0</span><span class="stat-label">Tech Skills</span></div>
+          <div class="stat-box"><span class="stat-num" data-count="1">0</span><span class="stat-label">Year Learning</span></div>
+          <div class="stat-box"><span class="stat-num" data-count="100">0</span><span class="stat-label">% Dedication</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title">Technical Arsenal</h2>
+    </div>
+    <div class="reveal">
+      <div class="skills-categories">
+        <button class="active" data-cat="all">All</button>
+        <button data-cat="frontend">Frontend</button>
+        <button data-cat="backend">Backend</button>
+        <button data-cat="tools">Tools</button>
+      </div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card" data-cat="frontend"><div class="skill-icon-row"><span class="skill-icon"><i class="fab fa-html5"></i></span><div class="skill-header"><span class="skill-name">HTML5</span><span class="skill-pct">92%</span></div></div><div class="progress-bg"><div class="progress-fill" data-p="92"></div></div></div>
+      <div class="skill-card" data-cat="frontend"><div class="skill-icon-row"><span class="skill-icon"><i class="fab fa-css3-alt"></i></span><div class="skill-header"><span class="skill-name">CSS3</span><span class="skill-pct">90%</span></div></div><div class="progress-bg"><div class="progress-fill" data-p="90"></div></div></div>
+      <div class="skill-card" data-cat="frontend"><div class="skill-icon-row"><span class="skill-icon"><i class="fab fa-js"></i></span><div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-pct">85%</span></div></div><div class="progress-bg"><div class="progress-fill" data-p="85"></div></div></div>
+      <div class="skill-card" data-cat="backend"><div class="skill-icon-row"><span class="skill-icon"><i class="fab fa-php"></i></span><div class="skill-header"><span class="skill-name">PHP</span><span class="skill-pct">82%</span></div></div><div class="progress-bg"><div class="progress-fill" data-p="82"></div></div></div>
+      <div class="skill-card" data-cat="backend"><div class="skill-icon-row"><span class="skill-icon"><i class="fas fa-database"></i></span><div class="skill-header"><span class="skill-name">MySQL</span><span class="skill-pct">85%</span></div></div><div class="progress-bg"><div class="progress-fill" data-p="85"></div></div></div>
+      <div class="skill-card" data-cat="backend"><div class="skill-icon-row"><span class="skill-icon"><i class="fas fa-fire"></i></span><div class="skill-header"><span class="skill-name">Laravel</span><span class="skill-pct">78%</span></div></div><div class="progress-bg"><div class="progress-fill" data-p="78"></div></div></div>
+      <div class="skill-card" data-cat="tools"><div class="skill-icon-row"><span class="skill-icon"><i class="fab fa-wordpress"></i></span><div class="skill-header"><span class="skill-name">WordPress</span><span class="skill-pct">72%</span></div></div><div class="progress-bg"><div class="progress-fill" data-p="72"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">Featured Work</h2>
+    </div>
+    <div class="reveal">
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="html">HTML/CSS</button>
+        <button class="filter-btn" data-filter="js">JavaScript</button>
+      </div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" data-tags="html js">
+        <div class="project-img">
+          <img src="musicc.png" alt="Rhythm House" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#1a0a2e,#0d0d1f)'">
+          <div class="project-overlay">
+            <div class="overlay-links">
+              <a href="https://areeshanazx1-jpg.github.io/Eproject-Web/" target="_blank" class="overlay-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Rhythm House</h3>
+          <p>Interactive music streaming UI with playlist management, audio controls, and a dynamic dark interface.</p>
+          <div class="tag-list"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-tags="js api">
+        <div class="project-img">
+          <img src="recipe.png" alt="Recipe Finder" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#0a1a1e,#091218)'">
+          <div class="project-overlay">
+            <div class="overlay-links">
+              <a href="https://areeshanazx1-jpg.github.io/Recipe-Finder-App/" target="_blank" class="overlay-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Recipe Finder</h3>
+          <p>Search and filter thousands of recipes via API integration with a clean, card-based UI.</p>
+          <div class="tag-list"><span class="tag">JavaScript</span><span class="tag">API</span><span class="tag">CSS3</span></div>
+        </div>
+      </div>
+      <div class="project-card" data-tags="html tailwind">
+        <div class="project-img">
+          <img src="travel.png" alt="Travel Ease" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#0a1a10,#091210)'">
+          <div class="project-overlay">
+            <div class="overlay-links">
+              <a href="https://areeshanazx1-jpg.github.io/Travel-Ease-Website/" target="_blank" class="overlay-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Travel Ease</h3>
+          <p>A travel booking platform with destination highlights, featured tours, and fully responsive design.</p>
+          <div class="tag-list"><span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">JavaScript</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY / EDUCATION -->
+<section id="journey">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">My Path</div>
+      <h2 class="section-title">Journey & Education</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2025 � Present</div>
+        <div class="timeline-card">
+          <h3>Web Development Journey</h3>
+          <p>Started learning frontend development and dove deep into HTML, CSS, JavaScript, PHP, and Laravel. Built three real-world deployed projects and continuously improving through hands-on practice.</p>
+          <span class="timeline-badge"><i class="fas fa-fire"></i> Ongoing</span>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Education</div>
+        <div class="timeline-card">
+          <h3>Academic Background</h3>
+          <p>Completed Intermediate (12th Grade) and earned a Certificate in Information Technology (CIT), forming the technical foundation for my self-driven development path.</p>
+          <span class="timeline-badge"><i class="fas fa-graduation-cap"></i> Completed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">What I Do</div>
+      <h2 class="section-title">Services</h2>
+    </div>
+    <div class="accordion-list reveal">
+      <div class="accordion-item">
+        <div class="accordion-head">
+          <div class="accordion-head-left"><div class="icon-wrap"><i class="fas fa-rocket"></i></div><h3>Frontend Development</h3></div>
+          <i class="fas fa-chevron-down chevron"></i>
+        </div>
+        <div class="accordion-body"><div class="accordion-body-inner">I build interactive, accessible, and performant UIs using HTML5, CSS3, and modern JavaScript. Pixel-perfect layouts with smooth animations and cross-browser compatibility.</div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-head">
+          <div class="accordion-head-left"><div class="icon-wrap"><i class="fas fa-mobile-alt"></i></div><h3>Responsive Web Design</h3></div>
+          <i class="fas fa-chevron-down chevron"></i>
+        </div>
+        <div class="accordion-body"><div class="accordion-body-inner">Mobile-first, fluid layouts that look great on every device. I use flexbox, CSS grid, and modern responsive patterns to ensure your site shines on any screen size.</div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-head">
+          <div class="accordion-head-left"><div class="icon-wrap"><i class="fab fa-wordpress"></i></div><h3>WordPress Development</h3></div>
+          <i class="fas fa-chevron-down chevron"></i>
+        </div>
+        <div class="accordion-body"><div class="accordion-body-inner">Custom theme development, plugin configuration, and CMS setup. I make WordPress sites fast, beautiful, and easy to manage without touching code.</div></div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-head">
+          <div class="accordion-head-left"><div class="icon-wrap"><i class="fas fa-paint-brush"></i></div><h3>UI/UX Design</h3></div>
+          <i class="fas fa-chevron-down chevron"></i>
+        </div>
+        <div class="accordion-body"><div class="accordion-body-inner">Intuitive, user-centered interface design with a focus on clarity, hierarchy, and delight. I translate ideas into wireframes and polished designs that are easy to navigate.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's Build Together</h2>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-form-wrap">
+        <form id="cForm">
+          <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name" required></div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" required></div>
+          <div class="form-group"><label>Subject</label><input type="text" placeholder="How can I help?"></div>
+          <div class="form-group"><label>Message</label><textarea rows="4" placeholder="Tell me about your project..."></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;border:none;"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-check-circle" style="font-size:2rem;color:var(--purple-light);margin-bottom:12px;display:block;"></i>
+          ? Message sent! I'll get back to you soon.
+        </div>
+      </div>
+      <div class="contact-info-wrap">
+        <div class="contact-info-card">
+          <h3>Get In Touch</h3>
+          <div class="contact-item"><div class="c-icon"><i class="fab fa-linkedin"></i></div><div class="contact-item-text"><strong>LinkedIn</strong>/in/areesha-naz</div></div>
+          <div class="contact-item"><div class="c-icon"><i class="fab fa-github"></i></div><div class="contact-item-text"><strong>GitHub</strong>github.com/areeshanazx1-jpg</div></div>
+        </div>
+        <div class="contact-info-card">
+          <h3>Social Links</h3>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/areesha-naz-661963381/" target="_blank" class="soc-btn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/areeshanazx1-jpg" target="_blank" class="soc-btn"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">AN.</div>
+      <p>Designed & Developed with <span class="heart">?</span> by Areesha Naz</p>
+      <p style="font-size:0.8rem;">� 2025 All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="btt" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
